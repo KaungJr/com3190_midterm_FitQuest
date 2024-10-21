@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Workout Programs">
+  <title>Workout Programs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  body {
+    background-color: #ffffff;
+    color: #212529;
+  }
+
+  .container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  .btn {
+    background-color: #712cf9;
+    color: #fff;
+    border: none;
+  }
+
+  .btn:hover {
+    background-color: #6528e0;
+  }
+
+  .search-bar {
+    margin: 20px 0;
+  }
+
+  .workout-card {
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+  }
+
+  .workout-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar, .footer {
+    background-color: #343a40;
+    color: #ffffff;
+  }
+
+  .navbar a, .footer a {
+    color: #ffffff;
+  }
+
+  
+  img.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+  }
+</style>
+</head>
+<body>
+
+  
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">FitQuest</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="workouts.html">Workouts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="workout_programs.html">Workout Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+ 
+  <div class="container my-5">
+    <h2 class="text-center">Workout Programs</h2>
+
+    
+    <div class="search-bar text-center">
+      <input id="searchInput" type="text" class="form-control" placeholder="Search for workout programs..." aria-label="Search">
+    </div>
+
+    
+    <div id="workout-container" class="row mt-4">
+      
+    </div>
+  </div>
+
+ 
+  <footer class="footer text-center py-3">
+    <strong class="mb-0">&copy; 2024 FitQuest. All rights reserved.</strong>
+  </footer>
+
+  <script src="./workout_programs.js"></script>
+</body>
+</html>
